@@ -20,20 +20,20 @@ class ThreeDee {
     this.makeStars();
 
     new THREE.TextureLoader().load(
-      '../darkdreamzz/assets/space.jpg',
+      '../assets/space.jpg',
       (texture) => {
         this.buildSpace(texture)
       }
     );
 
     new THREE.TextureLoader().load(
-      '../darkdreamzz/assets/92k-moon-color-map-3d-model.jpg',
+      '../assets/92k-moon-color-map-3d-model.jpg',
       (texture) => {
         this.buildMoon(texture);
       }
     );
 
-    new THREE.FontLoader().load('../darkdreamzz/assets/Adine_Kirnberg_Regular.json', (f) => {
+    new THREE.FontLoader().load('../assets/Adine_Kirnberg_Regular.json', (f) => {
       this.buildFont(f, 'Dark');
       this.buildFont(f, 'Dreamzz');
       this['Dark'].position.x = -20;
@@ -44,7 +44,7 @@ class ThreeDee {
 
   makeStars() {
     const POINTS = 10000;
-    const sprite = new THREE.TextureLoader().load('../darkdreamzz/assets/star.png');
+    const sprite = new THREE.TextureLoader().load('../assets/star.png');
     const geo = new THREE.BufferGeometry();
     const positions = new Float32Array( POINTS * 3 );
     const sizes = new Float32Array( POINTS );
@@ -140,9 +140,9 @@ class ThreeDee {
   handleMouseDown() {
     if (this.intersected) {
       if (this.intersected == this.Dark) {
-        window.location.href = "https://www.instagram.com/darkdreamzzlifestyle/";
+        window.location.href = "https://www.instagram.co.lifestyle/";
       } else if (this.intersected == this.Dreamzz) {
-        window.location.href = "https://www.depop.com/darkdreamzz/";
+        window.location.href = "https://www.depop.co./";
       }
     }
   }
