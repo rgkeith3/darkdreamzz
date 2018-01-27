@@ -1,0 +1,23 @@
+{
+  "name": "DarkDreamzz",
+  "version": "1.0.0",
+  "description": "fashion/lifestylebrand",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --watch",
+    "build": "webpack"
+  },
+  "author": "grey",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.28.9",
+    "eslint": "^4.15.0",
+    "lodash.throttle": "^4.1.1",
+    "style-loader": "^0.19.1",
+    "teoria": "^2.5.0",
+    "three": "^0.89.0",
+    "three-orbit-controls": "^82.1.0",
+    "tone": "^0.11.11",
+    "webpack-dev-server": "^2.11.0"
+  }
+}

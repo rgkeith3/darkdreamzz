@@ -1,0 +1,20 @@
+ok, changed plans.
+
+it's 3d now.
+  maybe I could eventually reforctor it to make it cleaner
+
+  make the stars float around and be their own objects that,
+  when intersecting with a raycaster, plays a note.
+
+  those notes are played alonga drone note.
+
+  maybe have at random intervals, play some samples of people speaking sexily
+  and also at random intervals, curry up a poem by picking words from the library:
+
+  [THE or A][Something][verbs][In, on, at][The or a][thing]
+
+
+need to add sounds to main page, and links
+need to make about page
+  about page could be some words infront of a red glass rose
+  when you click on the rose, more words come up
