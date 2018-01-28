@@ -926,20 +926,20 @@ class ThreeDee {
     this.makeStars();
 
     new __WEBPACK_IMPORTED_MODULE_0_three__["TextureLoader"]().load(
-      '../darkdreamzz/assets/space.jpg',
+      'https://dl.dropboxusercontent.com/s/89a1xub6n54t1xm/space.jpg?dl=0',
       (texture) => {
         this.buildSpace(texture)
       }
     );
 
     new __WEBPACK_IMPORTED_MODULE_0_three__["TextureLoader"]().load(
-      '../darkdreamzz/assets/92k-moon-color-map-3d-model.jpg',
+      'https://dl.dropboxusercontent.com/s/hfugw6bmtydkvc1/92k-moon-color-map-3d-model.jpg?dl=0',
       (texture) => {
         this.buildMoon(texture);
       }
     );
 
-    new __WEBPACK_IMPORTED_MODULE_0_three__["FontLoader"]().load('../darkdreamzz/assets/Adine_Kirnberg_Regular.json', (f) => {
+    new __WEBPACK_IMPORTED_MODULE_0_three__["FontLoader"]().load('https://dl.dropboxusercontent.com/s/jhihdwhffrq91ub/Adine_Kirnberg_Regular.json?dl=0', (f) => {
       this.buildFont(f, 'Dark');
       this.buildFont(f, 'Dreamzz');
       this['Dark'].position.x = -20;
@@ -950,7 +950,7 @@ class ThreeDee {
 
   makeStars() {
     const POINTS = 10000;
-    const sprite = new __WEBPACK_IMPORTED_MODULE_0_three__["TextureLoader"]().load('../darkdreamzz/assets/star.png');
+    const sprite = new __WEBPACK_IMPORTED_MODULE_0_three__["TextureLoader"]().load('https://dl.dropboxusercontent.com/s/byza5k6pum5q2r2/star.png?dl=0');
     const geo = new __WEBPACK_IMPORTED_MODULE_0_three__["BufferGeometry"]();
     const positions = new Float32Array( POINTS * 3 );
     const sizes = new Float32Array( POINTS );
@@ -1046,7 +1046,7 @@ class ThreeDee {
   handleMouseDown() {
     if (this.intersected) {
       if (this.intersected == this.Dark) {
-        window.location.href = "https://www.instagram.com/darkdreamzzlifestyle/";
+        window.location.href = "https://www.instagram.com/darkdreamzzlifestyle";
       } else if (this.intersected == this.Dreamzz) {
         window.location.href = "https://www.depop.com/darkdreamzz/";
       }
