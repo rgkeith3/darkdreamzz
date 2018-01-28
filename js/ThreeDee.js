@@ -140,9 +140,9 @@ class ThreeDee {
   handleMouseDown() {
     if (this.intersected) {
       if (this.intersected == this.Dark) {
-        window.location.href = "https://www.instagram.co.lifestyle/";
+        window.location.href = "https://www.instagram.com/darkdreamzzlifestyle";
       } else if (this.intersected == this.Dreamzz) {
-        window.location.href = "https://www.depop.co./";
+        window.location.href = "https://www.depop.com/darkdreamzz/";
       }
     }
   }
