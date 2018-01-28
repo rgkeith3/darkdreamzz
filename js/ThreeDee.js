@@ -20,20 +20,20 @@ class ThreeDee {
     this.makeStars();
 
     new THREE.TextureLoader().load(
-      '../darkdreamzz/assets/space.jpg',
+      'https://dl.dropboxusercontent.com/s/89a1xub6n54t1xm/space.jpg?dl=0',
       (texture) => {
         this.buildSpace(texture)
       }
     );
 
     new THREE.TextureLoader().load(
-      '../darkdreamzz/assets/92k-moon-color-map-3d-model.jpg',
+      'https://dl.dropboxusercontent.com/s/hfugw6bmtydkvc1/92k-moon-color-map-3d-model.jpg?dl=0',
       (texture) => {
         this.buildMoon(texture);
       }
     );
 
-    new THREE.FontLoader().load('../darkdreamzz/assets/Adine_Kirnberg_Regular.json', (f) => {
+    new THREE.FontLoader().load('https://dl.dropboxusercontent.com/s/jhihdwhffrq91ub/Adine_Kirnberg_Regular.json?dl=0', (f) => {
       this.buildFont(f, 'Dark');
       this.buildFont(f, 'Dreamzz');
       this['Dark'].position.x = -20;
@@ -44,7 +44,7 @@ class ThreeDee {
 
   makeStars() {
     const POINTS = 10000;
-    const sprite = new THREE.TextureLoader().load('../darkdreamzz/assets/star.png');
+    const sprite = new THREE.TextureLoader().load('https://dl.dropboxusercontent.com/s/byza5k6pum5q2r2/star.png?dl=0');
     const geo = new THREE.BufferGeometry();
     const positions = new Float32Array( POINTS * 3 );
     const sizes = new Float32Array( POINTS );
